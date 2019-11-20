@@ -127,10 +127,3 @@ class Vector(object):
     def times_scalar(self, c):
         new_coordinates = [Decimal(c)*x for x in self.coordinates]
         return Vector(new_coordinates)
-
-
-
-v = Vector([-0.221, 7.437])
-w = Vector([8.813, -1.331, -6.247])
-print(w.magnitude())
-
